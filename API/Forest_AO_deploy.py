@@ -14,7 +14,7 @@ import os
 # Year', 'Mileage', 'State', 'Make', 'Model'
 def predict_tree(year,mileage,state,make,model):
     
-    tree = joblib.load(os.path.dirname(__file__) + '/RandomForest_AO.pkl') 
+    tree = joblib.load(os.path.dirname(__file__) + '/gbm_model.pkl') 
     
     #Features:
     columns=['Year', 'Mileage', 'State', 'Make', 'Model']
